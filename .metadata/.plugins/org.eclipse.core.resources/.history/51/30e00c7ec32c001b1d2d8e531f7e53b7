@@ -1,0 +1,21 @@
+package Controller;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import Model.DAO;
+import Model.DTO;
+
+public class BookController {
+	DAO dao = new DAO();
+	//List listBook = new ArrayList<>();
+public List<DTO> getListBook() throws SQLException{
+	return dao.getListBook();
+}
+public boolean CreateBook(DTO book) throws SQLException {
+	return dao.addBook(book);
+	
+}
+
+}

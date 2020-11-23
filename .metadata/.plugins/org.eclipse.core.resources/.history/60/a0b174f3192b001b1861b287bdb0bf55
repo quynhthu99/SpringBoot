@@ -1,0 +1,49 @@
+package Model;
+
+public class DTO {
+private String nameBook;
+private String authorBook;
+private String categoryBook;
+private int idBook;
+
+
+public DTO() {
+	
+}
+public DTO(String namString, String authorbook, String categoString, int idBook) {
+	this.authorBook=authorBook;
+	this.nameBook =nameBook;
+	this.categoryBook = categoString;
+	this.idBook=idBook;
+}
+public String getNameBook() {
+	return nameBook;
+}
+public void setNameBook(String nameBook) {
+	this.nameBook = nameBook;
+}
+public String getAuthorBook() {
+	return authorBook;
+}
+public void setAuthorBook(String authorBook) {
+	this.authorBook = authorBook;
+}
+public String getCategoryBook() {
+	return categoryBook;
+}
+public void setCategoryBook(String categoryBook) {
+	this.categoryBook = categoryBook;
+}
+public int getIdBook() {
+	return idBook;
+}
+public void setIdBook(int idBook) {
+	this.idBook = idBook;
+}
+@Override
+public String toString() {
+	return "DTO [nameBook=" + nameBook + ", authorBook=" + authorBook + ", categoryBook=" + categoryBook + ", idBook="
+			+ idBook + "]";
+}
+
+}

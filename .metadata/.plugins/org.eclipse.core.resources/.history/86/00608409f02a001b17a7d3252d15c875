@@ -1,0 +1,12 @@
+package Helper;
+
+import java.sql.ResultSet;
+
+public class TestMain {
+	 public static void main(String[] args) {
+		 DatabaseUtil databaseUtil = new DatabaseUtil();
+	    	String sql = "select * from book";
+	    	//String sql = "SELECT * FROM Book";
+	        ResultSet res = DatabaseUtil.executeQuery(sql);
+	    }
+}

@@ -1,0 +1,39 @@
+package Helper;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
+
+public class DatabaseUtil {
+	String URL = "\"jdbc:sqlserver://localhost:1433;\" + \"databaseName=library;\"\r\n"
+			+ "			+ \"integratedSecurity=true\";";
+	String USER = "sa";
+	String PASS = "123456";
+	Connection connection = null;
+	public DatabaseUtil() {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            System.out.println(e);
+            return;
+        }
+        try {
+            connection = DriverManager.getConnection(URL,USER,PASS);
+        } catch (SQLException e) {
+            System.out.println(e);
+            return;
+        }
+    }
+	
+
+   
+    
+   
+
+}

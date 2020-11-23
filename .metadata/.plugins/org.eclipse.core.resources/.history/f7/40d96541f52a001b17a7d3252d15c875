@@ -1,0 +1,12 @@
+package Helper;
+
+import java.sql.ResultSet;
+
+public class TestMain {
+	 public static void main(String[] args) {
+		 DatabaseUtil databaseUtil = new DatabaseUtil();
+	    	
+	        
+	    }
+	 
+}

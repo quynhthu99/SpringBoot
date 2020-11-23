@@ -1,0 +1,34 @@
+package Model;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+import Helper.DatabaseUtil;
+
+
+
+public class DAO {
+public List<DTO> getListBook(String sql){
+	List<DTO> listBook = new ArrayList<>();
+	sql = "select* from book";
+	PreparedStatement ps = DatabaseUtil.getInstance().conn.prepareStatement(sql);
+	ResultSet rs = ps.executeQuery();
+	while (rs.next()) {
+		DTO book = new DTO();
+		book.setNameBook(rs.getString(1));
+		book.setAuthorBook(rs.getString(2));
+		book.setCategoryBook(rs.getString(3));
+		book.setIdBook(rs.getInt(4));
+		listBook.add(book);
+	}
+
+	return listBook;
+}
+	
+	
+}
+

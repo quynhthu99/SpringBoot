@@ -1,0 +1,36 @@
+package Model;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+import Helper.DatabaseUtil;
+
+
+
+public class DAO {
+
+	public List<DTO> getListBook() throws SQLException{
+		List<DTO> listBook = new ArrayList<>();
+		String sql = "select * from book";
+		PreparedStatement ps = DatabaseUtil.getInstance().getConn().prepareStatement(sql);
+		ResultSet rs = ps.executeQuery();
+		while (rs.next()) {
+			DTO book = new DTO();
+			book.setNameBook(rs.getString(1));
+			book.setAuthorBook(rs.getString(2));
+			book.setCategoryBook(rs.getString(3));
+			book.setIdBook(rs.getInt(4));
+			listBook.add(book);
+		}
+
+		return listBook;
+	}
+	
+	
+}
+

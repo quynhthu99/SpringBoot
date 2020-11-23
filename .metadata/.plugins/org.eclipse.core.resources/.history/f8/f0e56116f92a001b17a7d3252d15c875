@@ -1,0 +1,8 @@
+package Model;
+
+import Helper.DatabaseUtil;
+
+public class DAO {
+DatabaseUtil databaseUtil = new DatabaseUtil();
+
+}

@@ -1,0 +1,36 @@
+package View;
+
+import java.util.Scanner;
+
+
+public class BookView  {
+	public void View() {
+		while (true) {
+			System.out.println("Enter number: ");
+			System.out.println("1: Create ");
+			System.out.println("2: Read ");
+			System.out.println("3: Update ");
+			System.out.println("4: Delete ");
+			Scanner sc = new Scanner(System.in);
+			int n = sc.nextInt();
+			switch (n) {
+			case 1: {
+				
+				
+			}
+			case 2: {
+				
+			}
+			case 3: {
+				
+			}
+			case 4: {
+				
+			}
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + n);
+			}
+			
+		}
+	}
+}
