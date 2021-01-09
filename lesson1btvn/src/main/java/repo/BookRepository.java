@@ -56,12 +56,13 @@ public class BookRepository {
         int result = preparedStatement.executeUpdate();
         return result > 0;
     }
+
     public boolean getBookById(int idBook) throws ClassNotFoundException, SQLException {
-        String sql="select * from book where idbook =?";
+        String sql = "select * from book where idbook =?";
         PreparedStatement preparedStatement = databaseUtils.getConnection().prepareStatement(sql);
         preparedStatement.setInt(1, idBook);
         ResultSet resultSet = preparedStatement.executeQuery();
-        if(resultSet.next()){
+        if (resultSet.next()) {
             return true;
         }
         return false;

@@ -50,7 +50,7 @@ public class BookService {
         return false;
     }
 
-    public boolean deleteBook(int idBook)  {
+    public boolean deleteBook(int idBook) {
         try {
             if (bookRepository.getBookById(idBook)) return bookRepository.deleteBook(idBook);
 

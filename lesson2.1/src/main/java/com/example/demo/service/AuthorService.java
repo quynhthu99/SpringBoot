@@ -21,11 +21,11 @@ public class AuthorService {
 
     }
 
-    public Author findAuthorById(int id){
+    public Author findAuthorById(int id) {
         return authorReponsitory.findById(id).orElse(null);
     }
 
-    public void deleteAuthorById(int id){
+    public void deleteAuthorById(int id) {
         authorReponsitory.deleteById(id);
 
     }

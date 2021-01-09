@@ -13,7 +13,7 @@ public class DatabaseUtils {
         Class.forName(AppConfig.DRIVER.getValue());
     }
 
-    public Connection getConnection() throws ClassNotFoundException{
+    public Connection getConnection() throws ClassNotFoundException {
         this.testDriver();
         try {
             connection = DriverManager.getConnection(AppConfig.URL_DATABASE.getValue(), AppConfig.USERNAME.getValue(), AppConfig.PASSWORD.getValue());

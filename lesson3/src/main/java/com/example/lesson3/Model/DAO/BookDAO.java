@@ -15,7 +15,7 @@ public class BookDAO {
     JdbcTemplate jdbcTemplate;
 
 
-    public List<Book> getAllBooks(){
+    public List<Book> getAllBooks() {
         String sql = "select * from book";
         List<Book> result = jdbcTemplate.query(sql, new BookMapper());
         return result;

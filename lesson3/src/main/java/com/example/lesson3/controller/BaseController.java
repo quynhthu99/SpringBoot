@@ -11,8 +11,9 @@ public class BaseController {
 
     public int userId;
     public String username;
+
     @ModelAttribute("BeforeRequest")
-    public void beforeRequest(HttpServletRequest request, HttpServletResponse response){
+    public void beforeRequest(HttpServletRequest request, HttpServletResponse response) {
         username = "Luong Quynh Thu";
     }
 }

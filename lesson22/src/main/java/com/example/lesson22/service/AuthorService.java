@@ -13,7 +13,8 @@ public class AuthorService {
     public AuthorService(AuthorRepository authorRepository) {
         this.authorRepository = authorRepository;
     }
-    public Author addAuthor(Author author){
-       return authorRepository.save(author);
+
+    public Author addAuthor(Author author) {
+        return authorRepository.save(author);
     }
 }

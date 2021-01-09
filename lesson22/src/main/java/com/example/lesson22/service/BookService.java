@@ -37,7 +37,7 @@ public class BookService {
         bookRepository.deleteById(id);
     }
 
-    public List<Book> getAllBooks(){
+    public List<Book> getAllBooks() {
         return bookRepository.findAll();
     }
 }

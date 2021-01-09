@@ -27,15 +27,16 @@ public class BookController {
     @RequestMapping(value = "/update-book", method = RequestMethod.PUT)
     public Book updateBook(@RequestBody BookWithAuthor bookWithAuthor) {
 
-        return bookService.updateBook(bookWithAuthor.getBook(),bookWithAuthor.getId());
+        return bookService.updateBook(bookWithAuthor.getBook(), bookWithAuthor.getId());
 
     }
-@RequestMapping(value = "/delete-book", method = RequestMethod.DELETE)
-    public void deleteBook(@RequestParam(value = "id")  long id) {
+
+    @RequestMapping(value = "/delete-book", method = RequestMethod.DELETE)
+    public void deleteBook(@RequestParam(value = "id") long id) {
         bookService.deleteBook(id);
     }
 
-    @RequestMapping(value = "/get-all-book",method = RequestMethod.GET)
+    @RequestMapping(value = "/get-all-book", method = RequestMethod.GET)
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
     }

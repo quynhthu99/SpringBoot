@@ -32,8 +32,8 @@ public class ProductRepository {
 
     public Product addProduct(Product product) {
         String sql = "INSERT INTO `Product` (`productID`, `display`, `priceIn`, `priceOut`, `priceSale`, `amount`, `shipday`, `description`, `images`, `deleted`, `create_at`, `update_at`) VALUES (?,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? );";
-        Object[] params = {product.getProductID(),product.getDisplay(),product.getPriceIn(),product.getPriceOut(),product.getPriceSale(),product.getAmount(),product.getShipday(),product.getDescription(),product.getImage(),product.getDeleted(),product.getCreate_at(),product.getUpdate_at()};
-        jdbcTemplate.update(sql,params);
+        Object[] params = {product.getProductID(), product.getDisplay(), product.getPriceIn(), product.getPriceOut(), product.getPriceSale(), product.getAmount(), product.getShipday(), product.getDescription(), product.getImage(), product.getDeleted(), product.getCreate_at(), product.getUpdate_at()};
+        jdbcTemplate.update(sql, params);
         return product;
     }
 
