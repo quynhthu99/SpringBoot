@@ -22,25 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a321ddbc-39ec-4a2d-81b3-86630b0f045b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lesson3/src/main/java/com/example/lesson3/Model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson3/src/main/java/com/example/lesson3/Model/DAO/BookDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson3/src/main/java/com/example/lesson3/Repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson3/src/main/java/com/example/lesson3/Service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson3/src/main/java/com/example/lesson3/Util/JdbcMapper/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson3/src/main/java/com/example/lesson3/Util/ResponseBuilder/ResponseForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson3/src/main/java/com/example/lesson3/controller/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson3/src/main/java/com/example/lesson3/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson3/src/main/java/com/example/lesson3/controller/DefaultController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lession2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lession2/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lession2/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lession2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lession2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lession2/lesson2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lession2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson2_SQL.mwb" beforeDir="false" />
-    </list>
+    <list default="true" id="a321ddbc-39ec-4a2d-81b3-86630b0f045b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +39,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="C:\Users\quynh\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -93,6 +75,7 @@
       <updated>1610173099572</updated>
       <workItem from="1610173102462" duration="532000" />
       <workItem from="1610174424981" duration="23000" />
+      <workItem from="1610175650839" duration="37000" />
     </task>
     <servers />
   </component>
@@ -120,9 +103,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610173613483" />
-    <state x="65" y="0" key="new project wizard" timestamp="1610173636888">
+    <state x="65" y="0" key="new project wizard" timestamp="1610175685547">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1610173636888" />
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1610175685547" />
   </component>
 </project>
