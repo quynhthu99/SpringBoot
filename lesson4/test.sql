@@ -14,7 +14,6 @@ insert into Product(productID,display,priceIn,priceOut, priceSale, amount, shipd
 select * from Product where deleted = 0;
 
 select * from Product 
-where deleted =0
 order by priceOut desc;
 
 

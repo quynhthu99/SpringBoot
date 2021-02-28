@@ -23,11 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26c009f3-2ef5-45d0-b7d7-d04727c35c1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/db1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/db1.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson4/src/main/java/com/example/lesson4/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/java/com/example/lesson4/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/java/com/example/lesson4/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/java/com/example/lesson4/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson4/src/main/java/com/example/lesson4/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/java/com/example/lesson4/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson4/target/classes/com/example/lesson4/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/classes/com/example/lesson4/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/classes/com/example/lesson4/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/classes/com/example/lesson4/repository/ProductRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson4/target/classes/com/example/lesson4/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/classes/com/example/lesson4/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/test.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +70,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lesson3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -102,6 +107,9 @@
       <workItem from="1610164272006" duration="12000" />
       <workItem from="1610165921748" duration="37000" />
       <workItem from="1610282875790" duration="15000" />
+      <workItem from="1610891916567" duration="15000" />
+      <workItem from="1610891968326" duration="369000" />
+      <workItem from="1612632533035" duration="171000" />
     </task>
     <servers />
   </component>

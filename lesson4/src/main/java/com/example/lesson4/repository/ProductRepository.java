@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -14,6 +15,18 @@ public class ProductRepository {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
+
+    //search khong truyen gi => all san pham
+    //khong phan biet dau, upper case, lower case
+    //bat cac ki tu dac biet
+    //path: GET product/search?searchData = ?
+    //update
+    // path: PUT product/:id (body)
+    //chi update nhung truong truyen trong body, con lai giu nguyen
+    //check id product co ton tai k => bao khonn ton tai
+    //delete
+    //path: DELETE product/:id
+    //khong ton tai => bao la khong ton tai
     public List<Product> getAllProduct() {
         String sql = "select * from product order by priceOut asc";
         List<Product> result = jdbcTemplate.query(sql, new ProductMapper());
@@ -41,12 +54,15 @@ public class ProductRepository {
         return product;
     }
 
-    public Product getByDisplay(String display) {
+    public List<Product> getByDisplay(String display) {
         String sql = "select * from product where display = ?";
         Object[] params = {display};
-        Product product = (Product) jdbcTemplate.queryForObject(sql, new ProductMapper(), params);
-        return product;
+       // Product product = (Product) jdbcTemplate.queryForObject(sql, new ProductMapper(), params);
+        List<Product> result = jdbcTemplate.query(sql,new ProductMapper(),params);
+
+        return result;
     }
+
 
     public Product addProduct(Product product) {
         String sql = "INSERT INTO `Product` (`productID`, `display`, `priceIn`, `priceOut`, `priceSale`, `amount`, `shipday`, `description`, `images`, `deleted`, `create_at`, `update_at`) VALUES (?,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? );";

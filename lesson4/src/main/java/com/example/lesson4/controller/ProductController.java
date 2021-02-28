@@ -30,7 +30,7 @@ public class ProductController {
     }
 
     @GetMapping("/find-by-name")
-    public Product getByDisplay(@RequestParam String display) {
+    public List<Product> getByDisplay(@RequestParam String display) {
         return productService.getByDisplay(display);
     }
 

@@ -32,8 +32,9 @@ public class ProductService {
         return productRepository.getById(productId);
     }
 
-    public Product getByDisplay(String display) {
-        return productRepository.getByDisplay(display);
+    public List<Product> getByDisplay(String display) {
+        if(display.equals("")) return productRepository.getAllProduct();
+        else return productRepository.getByDisplay(display);
     }
 
     ;

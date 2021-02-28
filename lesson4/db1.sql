@@ -280,4 +280,27 @@ INSERT INTO `Receipt` (`saleID`, `productID`, `accountID`, `price`, `status`, `d
 INSERT INTO `Receipt` (`saleID`, `productID`, `accountID`, `price`, `status`, `deleted`, `create_at`, `update_at`) VALUES ('fea413f3-a358-32fd-9a9c-4dab853684d2', '43965d1a-4a06-3209-af65-ea4faad4d5e5', 'a6c0c3f9-e5d6-3a40-bb28-aa0cc36a2ca4', 2677, 'Totam quo et cupiditate provident voluptatum iste est.', 0, '1997-07-17 21:54:33', '1988-01-11 03:27:48');
 INSERT INTO `Receipt` (`saleID`, `productID`, `accountID`, `price`, `status`, `deleted`, `create_at`, `update_at`) VALUES ('ffd7dd9f-6c0a-3206-8aad-e9453e12de0c', 'd0897c89-42a3-34fb-8db9-76f7f4649a9e', '2f1f5e14-5481-3028-9031-9d17b08ea679', 759727, 'Suscipit temporibus voluptatum nam voluptatum dolorem.', 0, '2008-08-22 01:47:32', '1971-04-07 02:17:35');
 
+drop table `Receipt`;
 
+drop table if exists `Receipt`;
+create table Receipt(
+	receiptID nvarchar(36) primary key not null,
+    accountID nvarchar(36),
+	status nvarchar(100),
+    create_at timestamp default(current_timestamp),
+    update_at timestamp default(current_timestamp) on update current_timestamp,
+    deleted int default 0,
+    totalMoney int,
+    foreign key (accountID) references `account`(accountID)
+);
+
+create table ReceiptDetail(
+	receiptID nvarchar(36),
+    productID nvarchar(36),
+    amount int,
+    price int,
+    foreign key (receiptID) references Receipt(receiptID),
+    foreign key (productID) references product(productID)
+);
+
+alter table ReceiptDetail drop price
